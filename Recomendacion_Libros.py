@@ -1,6 +1,7 @@
 import json
 import tkinter as tk
 from tkinter import ttk, messagebox
+from datetime import datetime
 
 libros = []
 
@@ -16,12 +17,15 @@ def cargar_datos():
     except:
         messagebox.showerror("Error", "No se pudo cargar data.json")
 
-def guardar_sugerencia(texto, libro):
+def guardar_sugerencia(texto):
     try:
+        fecha = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
+
         with open("sugerencias.txt", "a", encoding="utf-8") as f:
-            f.write(f"Libro seleccionado: {libro}\n")
+            f.write(f"{fecha}\n")
             f.write(f"Sugerencia del usuario: {texto}\n")
             f.write("---\n\n")
+
         messagebox.showinfo("Guardado", "Sugerencia guardada correctamente.")
     except:
         messagebox.showerror("Error", "No se pudo guardar la sugerencia.")
@@ -70,10 +74,19 @@ def mostrar_detalles(event=None):
         return
 
     libro = next((l for l in libros if l["titulo"] == seleccion), None)
+
+    # Etiquetas
     etiquetas_lbl.config(text=", ".join(libro["etiquetas"]))
 
+    # Promedio
     prom = sum(libro["puntuaciones"]) / len(libro["puntuaciones"])
     promedio_lbl.config(text=f"{prom:.2f}")
+
+    # ======= Mostrar Sinopsis =======
+    sinopsis_text.config(state="normal")
+    sinopsis_text.delete(1.0, tk.END)
+    sinopsis_text.insert(tk.END, libro.get("sinopsis", "Sin sinopsis disponible."))
+    sinopsis_text.config(state="disabled")
 
 
 def boton_similares():
@@ -107,13 +120,12 @@ def boton_popularidad():
 
 def boton_guardar_sugerencia():
     texto = sugerencia_entry.get("1.0", tk.END).strip()
-    libro = combo_libros.get()
 
     if not texto:
         messagebox.showwarning("Aviso", "No puedes guardar una sugerencia vacía.")
         return
 
-    guardar_sugerencia(texto, libro)
+    guardar_sugerencia(texto)
     sugerencia_entry.delete("1.0", tk.END)
 
 
@@ -142,6 +154,11 @@ ttk.Label(frame, text="Promedio:").grid(row=1, column=0, sticky="w")
 promedio_lbl = ttk.Label(frame, text="")
 promedio_lbl.grid(row=1, column=1)
 
+# ======= SINOPSIS =======
+ttk.Label(root, text="Sinopsis del libro:").pack()
+sinopsis_text = tk.Text(root, width=60, height=5, wrap="word", state="disabled")
+sinopsis_text.pack(pady=5)
+
 # Botones
 ttk.Button(root, text="Recomendar por etiquetas", command=boton_similares).pack(pady=3)
 ttk.Button(root, text="Recomendar por popularidad", command=boton_popularidad).pack(pady=3)
@@ -152,7 +169,7 @@ resultados_text = tk.Text(root, width=60, height=12)
 resultados_text.pack()
 
 # Sugerencias del usuario
-ttk.Label(root, text="Tu recomendación para mejorar:").pack(pady=5)
+ttk.Label(root, text="Sugerencia de libros:").pack(pady=5)
 sugerencia_entry = tk.Text(root, width=60, height=4)
 sugerencia_entry.pack()
 
