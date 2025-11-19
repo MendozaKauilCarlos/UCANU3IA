@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "titulo": "Introducción a la Inteligencia Artificial",
+        "etiquetas": ["inteligencia artificial", "machine learning", "programacion"],
+        "puntuaciones": [5, 4, 5, 4],
+        "sinopsis": "Una guía accesible que explica los fundamentos de la inteligencia artificial, desde sus orígenes hasta las técnicas modernas como aprendizaje supervisado y modelos predictivos.",
+        "imagen": ""
+    },
+    {
+        "id": 2,
+        "titulo": "Estructuras de Datos con Python",
+        "etiquetas": ["programacion", "algoritmos", "estructuras de datos"],
+        "puntuaciones": [4, 5, 4, 5],
+        "sinopsis": "Un recorrido completo por las estructuras de datos más utilizadas en programación, explicadas con ejemplos prácticos en Python para facilitar su comprensión y aplicación.",
+        "imagen": ""
+    },
+    {
+        "id": 3,
+        "titulo": "Principios de Robótica",
+        "etiquetas": ["robotica", "inteligencia artificial", "ingenieria"],
+        "puntuaciones": [3, 4, 3],
+        "sinopsis": "Explora los conceptos esenciales de la robótica, incluyendo sensores, actuadores, sistemas de control y la integración con algoritmos inteligentes.",
+        "imagen": ""
+    },
+    {
+        "id": 4,
+        "titulo": "Álgebra Lineal para Ingenieros",
+        "etiquetas": ["matematicas", "algebra", "ingenieria"],
+        "puntuaciones": [5, 5, 4, 5],
+        "sinopsis": "Una introducción clara y aplicada al álgebra lineal, enfocada en resolver problemas reales de ingeniería mediante vectores, matrices y transformaciones lineales.",
+        "imagen": ""
+    },
+    {
+        "id": 5,
+        "titulo": "Física Cuántica: Una Guía Práctica",
+        "etiquetas": ["fisica", "cuantica", "matematicas"],
+        "puntuaciones": [5, 3, 5],
+        "sinopsis": "Un acercamiento sencillo pero riguroso a los principios de la mecánica cuántica, diseñado para estudiantes que buscan comprender sus fundamentos sin perder profundidad.",
+        "imagen": ""
+    },
+    {
+        "id": 6,
+        "titulo": "Machine Learning con Scikit-learn",
+        "etiquetas": ["machine learning", "programacion", "python"],
+        "puntuaciones": [5, 5, 5],
+        "sinopsis": "Aprende a construir modelos de machine learning utilizando Scikit-learn, desde la preparación de datos hasta la evaluación de modelos y su implementación.",
+        "imagen": ""
+    },
+    {
+        "id": 7,
+        "titulo": "Desarrollo Web con Django",
+        "etiquetas": ["programacion", "desarrollo web", "python"],
+        "puntuaciones": [4, 4, 5, 4],
+        "sinopsis": "Guía completa para aprender Django, cubriendo creación de proyectos, uso de bases de datos, plantillas, autenticación y despliegue de aplicaciones web profesionales.",
+        "imagen": ""
+    },
+    {
+        "id": 8,
+        "titulo": "Bases de Datos Relacionales y SQL",
+        "etiquetas": ["bases de datos", "sql", "programacion"],
+        "puntuaciones": [5, 5, 4, 5],
+        "sinopsis": "Explicación detallada del funcionamiento de las bases de datos relacionales y el lenguaje SQL, con ejemplos de consultas, diseño de esquemas y optimización.",
+        "imagen": ""
+    },
+    {
+        "id": 9,
+        "titulo": "Historia del Arte Moderno",
+        "etiquetas": ["historia", "arte", "cultura"],
+        "puntuaciones": [3, 3, 4],
+        "sinopsis": "Un recorrido visual y conceptual por los principales movimientos del arte moderno, sus artistas, influencias sociales y evolución a través del tiempo.",
+        "imagen": ""
+    },
+    {
+        "id": 10,
+        "titulo": "Microeconomía para Principiantes",
+        "etiquetas": ["economia", "finanzas", "microeconomia"],
+        "puntuaciones": [4, 5, 4],
+        "sinopsis": "Introducción clara a los conceptos básicos de la microeconomía, incluyendo oferta, demanda, mercados, costos y comportamiento del consumidor.",
+        "imagen": ""
+    },
+    {
+        "id": 11,
+        "titulo": "Química Orgánica Avanzada",
+        "etiquetas": ["quimica", "biologia", "ciencia"],
+        "puntuaciones": [3, 2, 3],
+        "sinopsis": "Profundiza en los mecanismos, reacciones y estructuras complejas de la química orgánica, ideal para estudiantes de ciencias y biología molecular.",
+        "imagen": ""
+    },
+    {
+        "id": 12,
+        "titulo": "Introducción a la Psicología Cognitiva",
+        "etiquetas": ["psicologia", "ciencia", "cognitiva"],
+        "puntuaciones": [5, 4, 5],
+        "sinopsis": "Explora cómo la mente humana procesa información, abordando memoria, percepción, atención, lenguaje y toma de decisiones desde un enfoque científico.",
+        "imagen": ""
+    },
+    {
+        "id": 13,
+        "titulo": "Sistemas Operativos Modernos",
+        "etiquetas": ["sistemas operativos", "programacion", "ingenieria"],
+        "puntuaciones": [4, 4, 4],
+        "sinopsis": "Describe la arquitectura, funcionamiento interno y gestión de recursos en los sistemas operativos contemporáneos como Windows, Linux y macOS.",
+        "imagen": ""
+    },
+    {
+        "id": 14,
+        "titulo": "Filosofía Griega Antigua",
+        "etiquetas": ["filosofia", "historia", "cultura"],
+        "puntuaciones": [4, 5, 4],
+        "sinopsis": "Un análisis profundo de las ideas de los grandes filósofos griegos como Sócrates, Platón y Aristóteles, y su influencia en el pensamiento moderno.",
+        "imagen": ""
+    },
+    {
+        "id": 15,
+        "titulo": "Teoría de la Computación",
+        "etiquetas": ["teoria", "programacion", "matematicas"],
+        "puntuaciones": [5, 5, 5, 4],
+        "sinopsis": "Un estudio detallado de los fundamentos teóricos de la informática, incluyendo autómatas, gramáticas formales, computabilidad y complejidad algorítmica.",
+        "imagen": ""
+    },
+    {
+        "id": 16,
+        "titulo": "Bioquímica Fundamental",
+        "etiquetas": ["biologia", "quimica", "ciencia"],
+        "puntuaciones": [4, 3, 4, 3],
+        "sinopsis": "Explora la química de los procesos biológicos esenciales, como metabolismo, proteínas, lípidos y ADN, con enfoque en aplicaciones biomédicas.",
+        "imagen": ""
+    },
+    {
+        "id": 17,
+        "titulo": "Econometría con R",
+        "etiquetas": ["economia", "estadistica", "programacion"],
+        "puntuaciones": [5, 4, 5],
+        "sinopsis": "Manual práctico para aplicar métodos econométricos utilizando R, desde regresiones básicas hasta modelos avanzados y análisis de datos reales.",
+        "imagen": ""
+    },
+    {
+        "id": 18,
+        "titulo": "Ciberseguridad: Fundamentos",
+        "etiquetas": ["ciberseguridad", "redes", "ingenieria"],
+        "puntuaciones": [5, 5, 5, 4],
+        "sinopsis": "Presenta los conceptos esenciales de la ciberseguridad, incluyendo tipos de ataques, defensa en profundidad, cifrado y buenas prácticas de protección.",
+        "imagen": ""
+    },
+    {
+        "id": 19,
+        "titulo": "Literatura del Siglo XX",
+        "etiquetas": ["literatura", "historia", "cultura"],
+        "puntuaciones": [4, 4, 3],
+        "sinopsis": "Análisis de las obras, autores y movimientos literarios más influyentes del siglo XX, explorando su contexto histórico y aportes culturales.",
+        "imagen": ""
+    },
+    {
+        "id": 20,
+        "titulo": "Algoritmos Avanzados",
+        "etiquetas": ["algoritmos", "programacion", "teoria"],
+        "puntuaciones": [5, 5, 5],
+        "sinopsis": "Profundiza en algoritmos de alta complejidad como grafos, optimización, búsqueda avanzada y técnicas modernas utilizadas en software profesional.",
+        "imagen": ""
+    }
+]
